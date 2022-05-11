@@ -1,0 +1,90 @@
+body {
+    background-color: whitesmoke;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+#slideshowContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+img {
+    height: 450px;
+    width: 650px;
+    border: 24px solid lightgray;
+    box-sizing: content-box;
+}
+
+.text,
+.numbertext {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-size: large;
+    padding: 1.5rem;
+}
+
+.active {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 350px;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 350px;
+    border-radius: 3px 0 0 3px;
+}
+
+.dotContainer {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}

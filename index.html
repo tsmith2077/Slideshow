@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="slideshow.js" defer></script>
+</head>
+<body>
+    <div id="slideshowContainer">
+        <div class="mySlides fade" index="0">
+            <div class="numbertext">1 / 4</div>
+            <img src="./img/abstract.jpg">
+            <div class="text">Abstract Picture</div>
+        </div>
+
+        <div class="mySlides fade" index="1">
+            <div class="numbertext">2 / 4</div>
+            <img src="./img/sky.jpg">
+            <div class="text">Sky Picture</div>
+        </div>
+
+        <div class="mySlides fade" index="2">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/square.jpg">
+            <div class="text">Buildings Picture</div>
+        </div>
+
+        <div class="mySlides fade" index="3">
+            <div class="numbertext">4 / 4</div>
+            <img src="./img/sea.jpg">
+            <div class="text">Sea Picture</div>
+        </div>
+
+          <!-- Next and previous buttons -->
+        <a class="prev" slideArrow="-1">&#10094;</a>
+        <a class="next" slideArrow="1">&#10095;</a>
+    </div>
+
+<div class="dotContainer">
+    <span class="dot" dotIndex="0"></span>
+    <span class="dot" dotIndex="1"></span>
+    <span class="dot" dotIndex="2"></span>
+    <span class="dot" dotIndex="3"></span>
+</div>
+    
+</body>
+</html>
